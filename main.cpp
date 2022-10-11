@@ -12,7 +12,7 @@ int main(int argc, char* argv[])
 {
 	std::string str;
 	std::fstream f;
-	f.open("/dev/ttyACM0");
+	f.open("/dev/ttyACM1");
 
 	// Matrix's for kalman filter.
 	Eigen::MatrixXf Q(2,2);				// Tunable parameters. To increase accuracy of observer. Process Noise. [sensor + model]
